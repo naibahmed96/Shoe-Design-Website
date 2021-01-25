@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #CC021C;
+  padding: 20px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header div h1{
+  color: #fff;
+  padding-top: 5px;
+}
+header div p {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.slide {
+  text-align: center;
+  /* position: relative; */
+  width: 100vw;
+  margin: 20px auto 0px;
+}
+.slide img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.slide-text {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;  
+  margin: 0 auto;
+  margin-top: -60px;
+  /* width: 100px; */
+  padding: 0 40px;
+}
+
+.chevron-styling {
+  /* transform:translateY(50%); */
+}
+.arrow {
+  /* position:absolute; */
+  font-size: 4rem;
+  opacity: 0.5;
+  transform: translateY(-450%);
+  transition: all .2s ease-in-out;
+}
+.arrow:hover {
+  opacity: 1;
+}
+.left-chevron {
+  position: absolute;
+  left: 3rem;
+}
+.right-chevron {
+  position: absolute;
+  right: 3rem;
+}
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:  relative;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.btn-load {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: rgba(3,3,3,0.5);
+  font-size: 1.3rem;
+  transition: all .2s ease-in-out;
+  margin-top: 22rem;
+}
+.btn-load:hover {
+  background-color: rgba(3,3,3,0.8);
+}
+#carousel {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+
+}
